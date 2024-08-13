@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style\style.css">
+</head>
+<body>
+    <header class="header">
+        <img class="header__logo" src="assets\Logo.png" alt="LOGO">
+        <p class="header__parrafo">ALURA / Oracle Next Education</p>
+    </header>
+    <main class="encriptador">
+        <section class="encriptador__texto">
+            <h1 class="encriptador__texto__titulo">Encriptador de texto</h1>
+            <p class="encriptador__texto__parrafo">Para este encriptador de texto, tener en cuenta que solo se puede utilizar con letras minusculas y no se pueden utilizar numeros ni caracteres especiales </p>
+        </section>
+        <section class="encriptador__pantallas">
+            <div class="encriptador__pantallas_ingreso">
+                <textarea class="encriptador__pantallas_ingreso__textarea" placeholder="Ingresa tu texto aquí" id="texto"></textarea>
+            </div>
+            <div class="encriptador__pantallas__salida">
+                <pre class="encriptador__pantallas__salida__texto" id="salida" >Aquí aparecerá el texto de salida</pre>
+            </div>
+        </section>
+        <section class="encriptador__pantallas__botones">
+            <button onclick="mostrarResultado();" class="encriptador__pantallas__botones__encrptar">
+                Encriptar
+            </button>
+            <button id="copiarBoton" disabled class="encriptador__pantallas__botones__copiar"  >
+                Copiar
+            </button>    
+            <button onclick="mostrarDesencriptado()"  class="encriptador__pantallas__botones__desencriptar">
+                Desencriptar
+            </button>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__parrafo">Desarrollado por JDCH1206</p>
+    </footer>
+    <script src="app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url("/assets/milky-way.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 10%; 
+    gap: 30%;
+    text-align: center;
+}
+
+.header__logo {
+    margin-left: 0.5%;
+    padding: 2% 0.5%;
+    height: 30%;
+}
+
+.header__parrafo{
+    font-size:3vw;
+    font-weight: bold;
+    font-family: "Grenze Gotisch", serif;
+    font-optical-sizing: auto;
+    color: aliceblue;
+    justify-content: center;
+}
+
+.encriptador{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:80%;
+    
+}
+
+.encriptador__texto__titulo{
+    padding: 1% 5%;
+    height: 3%;
+    text-align: center;
+    font-size:8vh;
+    font-weight: 800;
+    font-family: "Grenze Gotisch", serif;
+    font-optical-sizing: auto;
+    color: aliceblue;
+}
+
+.encriptador__texto__parrafo{
+    height: 5%;
+    padding: 1% 10%;
+    font-size:3vh;
+    font-weight: 600;
+    font-family: "Grenze Gotisch", serif;
+    font-optical-sizing: auto;
+    color: aliceblue;
+    text-align: center;
+}
+
+.encriptador__pantallas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    height: 60%;
+    padding: 1% 2%;
+}
+
+.encriptador__pantallas_ingreso{
+    width: 50%;
+    height: 80%;
+    aspect-ratio: 25/ 16;
+    background-image: url("/assets/pantalla2.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 3%;
+    overflow-y: auto;
+    
+    
+}
+
+.encriptador__pantallas_ingreso__textarea {
+    margin-top: 7%;
+    width: 55%;
+    height: 60%;
+    font-size: 3vw;
+    border-radius: 10%;
+    text-align: center;
+    white-space: pre-wrap;     
+    white-space: -moz-pre-wrap;      
+    white-space: -o-pre-wrap;    
+    word-wrap: break-word;       
+    overflow-x: hidden;
+    font-family: "Roboto Mono", monospace;
+    background-color: rgb(226, 235, 243);
+}
+
+.encriptador__pantallas__salida{
+    width: 50%;
+    height: 80%;
+    aspect-ratio: 25/ 16;
+    background-image: url("/assets/pantalla2.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 3%;
+    overflow-y: auto;
+}
+
+.encriptador__pantallas__salida__texto{
+    margin-top: 7%;
+    width: 55%;
+    height: 60%; /* Ajusta la altura automáticamente */
+    font-size: 3vw;
+    border-radius: 10%;
+    text-align: center;
+    white-space: pre-wrap;     
+    white-space: -moz-pre-wrap;      
+    white-space: -o-pre-wrap;    
+    word-wrap: break-word;       
+    overflow-y: auto;
+    font-family: "Roboto Mono", monospace;
+    background-color: rgb(226, 235, 243);
+}
+
+.encriptador__pantallas__botones{
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    justify-content: center;
+}
+
+.encriptador__pantallas__botones__encrptar{
+    height: 5vw;
+    width: 30%;
+    background-image:url("/assets/galaxia.jpg"); 
+    color: aliceblue;
+    font-family: "Roboto Mono", monospace;
+    font-size: 3vw;
+    font-weight: bold;
+    border: 0.5vh solid green;
+    border-radius:  10px;
+}
+
+.encriptador__pantallas__botones__encrptar:hover{
+    border: 1vh solid #08e94f;
+    cursor: pointer;
+    border-radius:  40px;
+}
+
+.encriptador__pantallas__botones__copiar:disabled{
+    background-color: black;
+    color: black;
+    cursor: not-allowed;
+}
+
+.encriptador__pantallas__botones__copiar{
+    height: 5vw;
+    width: 15%;
+    background-image:url("/assets/galaxia.jpg"); 
+    color: aliceblue;
+    font-family: "Roboto Mono", monospace;
+    font-size: 3vw;
+    font-weight: bold;
+    border: 0.5vh solid green;
+    border-radius:  10px;
+}
+
+.encriptador__pantallas__botones__copiar:hover:not(:disabled){
+    border: 1vh solid #08e94f;
+    cursor: pointer;
+    border-radius:  40px;
+}
+
+.encriptador__pantallas__botones__desencriptar{
+    height: 5vw;
+    width: 30%;
+    background-image:url("/assets/galaxia.jpg"); 
+    color: aliceblue;
+    font-family: "Roboto Mono", monospace;
+    font-size: 3vw;
+    font-weight: bold;
+    border: 0.5vh solid green;
+    border-radius:  10px;
+}
+
+.encriptador__pantallas__botones__desencriptar:hover{
+    border: 1vh solid #08e94f;
+    cursor: pointer;
+    border-radius:  40px;
+}
+
+.footer{
+    height: 10%;
+}
+
+.footer__parrafo{
+    font-size:5vh;
+    font-weight: 600;
+    font-family: "Grenze Gotisch", serif;
+    font-optical-sizing: auto;
+    color: aliceblue;
+    text-align: center;
+}
+
+
+
+@media (max-width:1100px){
+    .encriptador__pantallas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vw;
+        height: 60%;
+        padding: 1% 2%;
+    }
+    .encriptador__pantallas__botones{
+        height: 30%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1vw;
+        justify-content: center;
+    }
+}
+
+@media (max-width:500px){
+    .encriptador__pantallas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vw;
+        height: 60%;
+        padding: 1% 2%;
+    }
+    .encriptador__pantallas__botones{
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1vw;
+        justify-content: center;
+    }
+    .encriptador__pantallas__botones__encrptar{
+        height: 8vw;
+        width: 30%;
+        background-image:url("/assets/galaxia.jpg"); 
+        color: aliceblue;
+        font-family: "Roboto Mono", monospace;
+        font-size: 3vw;
+        font-weight: bold;
+        border: 0.5vh solid green;
+        border-radius:  10px;
+    }
+    
+    .encriptador__pantallas__botones__encrptar:hover{
+        border: 1vh solid #08e94f;
+        cursor: pointer;
+        border-radius:  40px;
+    }
+    
+    .encriptador__pantallas__botones__copiar:disabled{
+        background-color: black;
+        color: black;
+        cursor: not-allowed;
+    }
+    
+    .encriptador__pantallas__botones__copiar{
+        height: 8vw;
+        width: 30%;
+        background-image:url("/assets/galaxia.jpg"); 
+        color: aliceblue;
+        font-family: "Roboto Mono", monospace;
+        font-size: 3vw;
+        font-weight: bold;
+        border: 0.5vh solid green;
+        border-radius:  10px;
+    }
+    
+    .encriptador__pantallas__botones__copiar:hover:not(:disabled){
+        border: 1vh solid #08e94f;
+        cursor: pointer;
+        border-radius:  40px;
+    }
+    
+    .encriptador__pantallas__botones__desencriptar{
+        height: 8vw;
+        width: 30%;
+        background-image:url("/assets/galaxia.jpg"); 
+        color: aliceblue;
+        font-family: "Roboto Mono", monospace;
+        font-size: 3vw;
+        font-weight: bold;
+        border: 0.5vh solid green;
+        border-radius:  10px;
+    }
+    
+    .encriptador__pantallas__botones__desencriptar:hover{
+        border: 1vh solid #08e94f;
+        cursor: pointer;
+        border-radius:  40px;
+    }
+    
+}
